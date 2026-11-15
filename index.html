@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#efe8dc">
+<meta name="description" content="Mohamed El-Shennawy & Amal El-Khouly — Wedding Invitation">
+<title>Mohamed & Amal — Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+:root{--paper:#f4efe7;--ink:#26302b;--sage:#66776d;--gold:#a88b58;--line:rgba(38,48,43,.18);--white:rgba(255,255,255,.66)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:Montserrat,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");z-index:20}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.preloader{position:fixed;inset:0;z-index:100;background:#26302b;display:grid;place-items:center;color:#f4efe7;transition:opacity .8s,visibility .8s}
+.preloader.hide{opacity:0;visibility:hidden}
+.loader{width:170px;text-align:center}
+.loader .monogram{font-family:"Cormorant Garamond";font-size:58px;font-style:italic;line-height:1}
+.loader p{font-size:9px;letter-spacing:4px;margin-top:14px;opacity:.7}
+.progress{height:1px;background:rgba(255,255,255,.2);margin-top:25px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:#f4efe7;animation:load 1.7s ease forwards}@keyframes load{to{width:100%}}
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 22px;background:
+radial-gradient(circle at 50% 42%,rgba(255,255,255,.88),rgba(244,239,231,.45) 38%,rgba(210,204,193,.24) 100%)}
+.hero:after{content:"";position:absolute;inset:20px;border:1px solid var(--line);pointer-events:none}
+.botanical{position:absolute;inset:0;overflow:hidden;pointer-events:none;opacity:.55}
+.botanical span{position:absolute;border:1px solid #718078;border-radius:100% 0 100% 0;transform:rotate(35deg)}
+.botanical span:nth-child(1){width:210px;height:105px;left:-65px;top:12%;}.botanical span:nth-child(2){width:170px;height:85px;right:-55px;top:20%;transform:rotate(-35deg)}.botanical span:nth-child(3){width:250px;height:125px;left:-80px;bottom:9%;transform:rotate(-35deg)}.botanical span:nth-child(4){width:190px;height:95px;right:-55px;bottom:15%;transform:rotate(35deg)}
+.hero-inner{position:relative;z-index:2;max-width:900px;animation:rise 1.4s .4s both}@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.kicker{font-size:10px;letter-spacing:6px;text-transform:uppercase;color:var(--sage);margin-bottom:25px}
+.names{font-family:"Cormorant Garamond",serif;font-size:clamp(58px,14vw,126px);font-weight:500;line-height:.75;letter-spacing:-4px}
+.names em{display:block;font-family:"Playfair Display";font-size:.24em;letter-spacing:2px;color:var(--gold);margin:23px 0;font-style:italic}
+.date{margin-top:34px;font-size:12px;letter-spacing:4px;color:var(--sage)}
+.rule{width:70px;height:1px;background:var(--gold);margin:22px auto}
+.invite-line{font-family:"Cormorant Garamond";font-size:21px;font-style:italic;color:#59635d}
+.scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--sage);z-index:3}.scroll:after{content:"";display:block;width:1px;height:35px;background:var(--gold);margin:9px auto 0}
+.section{padding:110px 22px;position:relative}.container{max-width:1050px;margin:auto}
+.eyebrow{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--sage);text-align:center;margin-bottom:15px}
+.heading{font-family:"Cormorant Garamond";font-size:clamp(46px,8vw,82px);font-weight:500;text-align:center;line-height:.9}
+.heading i{font-family:"Playfair Display";font-size:.42em;color:var(--gold);display:block;margin:10px 0;font-weight:400}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;margin-top:60px}
+.frame{padding:12px;background:rgba(255,255,255,.5);border:1px solid var(--line);box-shadow:0 22px 60px rgba(38,48,43,.08);transform:rotate(-2deg)}
+.frame-inner{aspect-ratio:4/5;overflow:hidden;background:linear-gradient(145deg,#d9d0c3,#aeb8ad)}
+.frame svg{width:100%;height:100%;display:block}
+.story-copy{padding:15px 10px}.story-copy p{font-family:"Cormorant Garamond";font-size:25px;line-height:1.35;margin:20px 0;color:#49534e}.story-copy .small{font-family:Montserrat;font-size:11px;line-height:1.9;letter-spacing:.4px;color:#69736d}
+.quote{margin-top:28px;font-family:"Playfair Display";font-style:italic;font-size:18px;color:var(--gold)}
+.details{background:#26302b;color:#f4efe7}.details .eyebrow{color:#c8b891}.details .heading{color:#f4efe7}.details .heading i{color:#c8b891}
+.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(244,239,231,.14);margin-top:55px;border:1px solid rgba(244,239,231,.14)}
+.detail{padding:45px 20px;text-align:center;background:#26302b}.detail .icon{font-family:"Cormorant Garamond";font-size:38px;color:#c8b891}.detail h3{font-size:9px;letter-spacing:3px;text-transform:uppercase;font-weight:500;margin:13px 0}.detail p{font-family:"Cormorant Garamond";font-size:25px;color:#fff}.detail small{display:block;font-size:9px;letter-spacing:1px;color:#b7b9b4;margin-top:8px}
+.countdown{padding:90px 20px;text-align:center;background:linear-gradient(180deg,#f4efe7,#ebe3d7)}
+.countdown-row{display:flex;justify-content:center;gap:clamp(18px,6vw,65px);margin-top:35px}.time b{font-family:"Cormorant Garamond";font-size:clamp(45px,10vw,82px);font-weight:500;display:block;line-height:.9}.time span{font-size:8px;letter-spacing:3px;color:var(--sage);text-transform:uppercase}
+.location{padding-bottom:120px}.location-card{margin:55px auto 0;max-width:760px;border:1px solid var(--line);padding:45px;text-align:center;background:rgba(255,255,255,.38)}.location-card h3{font-family:"Cormorant Garamond";font-size:38px;font-weight:500}.location-card p{font-size:10px;letter-spacing:2px;color:var(--sage);margin:12px 0 25px}.map-btn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ink);padding:14px 22px;font-size:9px;letter-spacing:2px;text-transform:uppercase;transition:.25s}.map-btn:hover{background:var(--ink);color:var(--paper)}
+.footer{background:#26302b;color:#f4efe7;text-align:center;padding:85px 20px}.footer .names-mini{font-family:"Cormorant Garamond";font-size:48px}.footer p{font-size:8px;letter-spacing:4px;color:#c8b891;margin-top:14px}
+.music{position:fixed;right:20px;bottom:20px;width:47px;height:47px;border:1px solid rgba(38,48,43,.3);background:rgba(244,239,231,.82);backdrop-filter:blur(10px);border-radius:50%;z-index:30;cursor:pointer;font-size:15px}.music.playing{animation:pulse 1.4s infinite}@keyframes pulse{50%{transform:scale(1.06)}}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .9s,transform .9s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:700px){.hero:after{inset:12px}.names{letter-spacing:-2px}.story{grid-template-columns:1fr;gap:40px}.frame{max-width:430px;margin:auto}.story-copy{text-align:center}.detail-grid{grid-template-columns:1fr}.detail{padding:32px 20px}.location-card{padding:35px 20px}.section{padding:85px 20px}}
+</style>
+</head>
+<body>
+<div class="preloader" id="preloader"><div class="loader"><div class="monogram">M & A</div><p>OUR STORY BEGINS</p><div class="progress"><i></i></div></div></div>
+
+<main>
+<section class="hero">
+  <div class="botanical"><span></span><span></span><span></span><span></span></div>
+  <div class="hero-inner">
+    <div class="kicker">Together with their families</div>
+    <h1 class="names">Mohamed <em>&amp;</em> Amal</h1>
+    <div class="rule"></div>
+    <p class="invite-line">invite you to celebrate the beginning of forever</p>
+    <div class="date">28 NOVEMBER · 7:00 PM</div>
+  </div>
+  <a class="scroll" href="#story">scroll to open</a>
+</section>
+
+<section class="section" id="story">
+ <div class="container">
+  <div class="reveal">
+   <div class="eyebrow">A little piece of our story</div>
+   <h2 class="heading">Two hearts <i>one beautiful beginning</i></h2>
+  </div>
+  <div class="story reveal">
+   <div class="frame">
+    <div class="frame-inner">
+      <svg viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elegant wedding illustration">
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9d1c5"/><stop offset="1" stop-color="#9ca99f"/></linearGradient>
+          <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf2"/><stop offset="1" stop-color="#ddd7cc"/></linearGradient>
+        </defs>
+        <rect width="600" height="750" fill="url(#bg)"/>
+        <circle cx="110" cy="100" r="65" fill="#f0e7d7" opacity=".55"/><circle cx="490" cy="150" r="95" fill="#718078" opacity=".22"/>
+        <path d="M0 650 Q150 590 300 650 T600 650 V750 H0Z" fill="#68786e" opacity=".65"/>
+        <!-- groom -->
+        <circle cx="258" cy="285" r="56" fill="#c18f72"/><path d="M205 277 Q210 215 263 218 Q310 225 311 278 Q278 245 205 277" fill="#3b312d"/>
+        <path d="M208 345 Q260 315 312 345 L350 570 Q270 610 190 570Z" fill="#26302b"/>
+        <path d="M232 350 L286 350 L260 415Z" fill="#f4efe7"/><path d="M248 350 L272 350 L260 390Z" fill="#a88b58"/>
+        <!-- bride -->
+        <circle cx="382" cy="275" r="55" fill="#d09b7e"/><path d="M326 275 Q325 202 385 210 Q440 215 438 282 Q414 238 326 275" fill="#403630"/>
+        <path d="M333 350 Q383 315 435 350 Q475 455 505 585 Q382 650 257 585 Q292 455 333 350" fill="url(#dress)"/>
+        <path d="M333 350 Q382 388 435 350 L455 395 Q383 440 313 395Z" fill="#fffdf8"/>
+        <path d="M337 228 Q384 170 430 230 Q424 205 384 180 Q346 195 337 228" fill="#f7f2e9" opacity=".8"/>
+        <!-- children -->
+        <circle cx="145" cy="525" r="25" fill="#c89274"/><path d="M120 520 Q123 487 146 490 Q170 492 170 522" fill="#4b3b32"/><path d="M120 552 Q145 530 170 552 L183 625 Q145 643 107 625Z" fill="#a88b58"/>
+        <circle cx="470" cy="520" r="24" fill="#c18f72"/><path d="M447 515 Q450 484 471 488 Q493 490 494 518" fill="#3f342e"/><path d="M447 548 Q470 530 494 548 L506 620 Q470 640 435 620Z" fill="#66776d"/>
+        <g fill="#f4efe7" opacity=".8"><circle cx="75" cy="205" r="3"/><circle cx="520" cy="260" r="3"/><circle cx="90" cy="330" r="2"/><circle cx="515" cy="410" r="2"/></g>
+      </svg>
+    </div>
+   </div>
+   <div class="story-copy">
+    <div class="eyebrow" style="text-align:left">The next chapter</div>
+    <p>And suddenly, all the little moments became one big moment worth celebrating.</p>
+    <div class="small">We would be honored to have you with us as we begin this new chapter together — surrounded by the people who make our lives beautiful.</div>
+    <div class="quote">“The best thing to hold onto in life is each other.”</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section details">
+ <div class="container">
+  <div class="reveal">
+   <div class="eyebrow">Save the date</div>
+   <h2 class="heading">The celebration <i>is almost here</i></h2>
+  </div>
+  <div class="detail-grid reveal">
+   <div class="detail"><div class="icon">28</div><h3>Date</h3><p>November 2026</p><small>SATURDAY</small></div>
+   <div class="detail"><div class="icon">7:00</div><h3>Time</h3><p>In the evening</p><small>PLEASE ARRIVE EARLY</small></div>
+   <div class="detail"><div class="icon">♥</div><h3>Dress to celebrate</h3><p>Come as you are</p><small>WITH YOUR BEST SMILE</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="countdown">
+ <div class="container reveal">
+  <div class="eyebrow">Counting every moment</div>
+  <h2 class="heading">Until we say <i>I do</i></h2>
+  <div class="countdown-row">
+   <div class="time"><b id="days">--</b><span>Days</span></div>
+   <div class="time"><b id="hours">--</b><span>Hours</span></div>
+   <div class="time"><b id="minutes">--</b><span>Minutes</span></div>
+   <div class="time"><b id="seconds">--</b><span>Seconds</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section location">
+ <div class="container reveal">
+  <div class="eyebrow">Meet us there</div>
+  <h2 class="heading">The place <i>where memories begin</i></h2>
+  <div class="location-card">
+   <h3>Wedding Celebration</h3>
+   <p>28 NOVEMBER · 7:00 PM</p>
+   <a class="map-btn" href="https://share.google/MnWiiicfICKb9D9Nz" target="_blank" rel="noopener">Open location ↗</a>
+  </div>
+ </div>
+</section>
+
+<footer class="footer">
+ <div class="names-mini">Mohamed &amp; Amal</div>
+ <p>WITH LOVE · 28 NOVEMBER 2026</p>
+</footer>
+</main>
+
+<button class="music" id="music" aria-label="Toggle music">♪</button>
+
+<script>
+const target=new Date('2026-11-28T19:00:00+02:00').getTime();
+function tick(){const d=Math.max(0,target-Date.now());const s=Math.floor(d/1000);document.getElementById('days').textContent=Math.floor(s/86400);document.getElementById('hours').textContent=String(Math.floor(s%86400/3600)).padStart(2,'0');document.getElementById('minutes').textContent=String(Math.floor(s%3600/60)).padStart(2,'0');document.getElementById('seconds').textContent=String(s%60).padStart(2,'0')}
+tick();setInterval(tick,1000);
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('preloader').classList.add('hide'),1900));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.getElementById('music').addEventListener('click',function(){this.classList.toggle('playing');this.textContent=this.classList.contains('playing')?'♫':'♪'});
+</script>
+</body>
+</html>

@@ -1,1 +1,10 @@
-# Mohamed & Amal — Wedding Invitation\n\nElegant mobile-first wedding invitation for **محمد الشناوي & آمال الخولي**.\n\n- Date: **28 November 2026**\n- Time: **07:00 PM**\n- Venue: **PRINCESS GARDEN HALL, DAMANHOUR**\n- Location: https://share.google/MnWiiicfICKb9D9Nz\n- GitHub Pages deployment workflow included\n
+# Mohamed & Amal — Wedding Invitation
+
+Elegant mobile-first wedding invitation for **محمد الشناوي & آمال الخولي**.
+
+- Date: **28 November 2026**
+- Time: **07:00 PM**
+- Venue: **PRINCESS GARDEN HALL, DAMANHOUR**
+- Location: https://share.google/MnWiiicfICKb9D9Nz
+- Live: https://tricktwog.github.io/wedding-invitation/
+- GitHub Pages deployment workflow included
